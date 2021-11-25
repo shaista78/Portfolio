@@ -17,7 +17,7 @@ const Tools = () => {
   <section id="services">
     <div className="services container">
       <div className="service-top">
-        <h1 className="section-title">Tools<span>&</span>Skills</h1>
+        <h1 className="section-title">Tools <span> & </span> Skills</h1>
       </div>
       <div className="service-bottom">
         <div className="service-item">

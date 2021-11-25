@@ -9,10 +9,18 @@ const Contact = () => {
     return <> 
     {/* <!-- Contact Section --> */}
   <section id="contact">
-    <div class="contact container">
+    <div className="contact container">
       <div>
-        <h1 class="section-title">Contact <span>info</span></h1>
+        <h1 className="section-title">Contact info</h1>
       </div>
+      <br/>
+      <br/>
+        <br/>
+      <br/>
+        <br/>
+      <br/>
+        <br/>
+      <br/>
       <div class="contact-items">
         <div class="contact-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" alt="phone" /></div>

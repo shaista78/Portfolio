@@ -1,125 +1,78 @@
 import "../style.css"
-import udacity from "../All/images/udacity.png"
-//import redbus from "../All/images/redbus.png"
-// import source from "../All/images/source.jpg"
-// import live from "../All/images/live.png"
-// import medium from "../All/images/midium.jpg"
+
+import first from "../All/images/firstproject.png"
+import Fernway from "../All/images/fernway.png"
+import second from "../All/images/SecondProject.png"
+import source from "../All/images/git.png"
+import live from "../All/images/live.png"
+import medium from "../All/images/midium.jpg"
 
 const Projects = () => {
-    return <>
-        <section id="projects">
-    <div class="projects container">
-     <h1 class="section-title">Recent <span>Projects</span></h1>
-     <div class="all-projects">
-     <div>
-       <h1 className="hh">Project 1</h1>
-         <img src={udacity} alt="img"/>
-            <h2>Udacity.com Clone</h2>
-            <p>Udacity which is an online education provider that offers online courses, popularly known as MOOCs or Massive Open Online Courses. </p>
-              <h3>Tech Stack: </h3>
-            <p>HTML | CSS | JavaScript </p>
-            <p className="flt">
-            <b>Live Demo</b>
-            <b>Source code</b>
-            <b>Blog</b>
-            </p>
-           
-            <br /><br />
-     </div>
-     <div>  <h1 className="hh">Project 1</h1>
-        <img src={udacity} alt="img"/>
-            <h2>Udacity.com Clone</h2>
-            <p>Udacity which is an online education provider that offers online courses, popularly known as MOOCs or Massive Open Online Courses. </p>
-              <h3>Tech Stack: </h3>
-            <p>HTML | CSS | JavaScript </p>
-             <p className="flt">
-            <b>Live Demo</b>
-            <b>Source code</b>
-            <b>Blog</b>
-            </p>
-            <br /><br /></div>
-     <div className="left">  <h1 className="hh">Project 1</h1>
-        <img src={udacity} alt="img"/>
-            <h2>Udacity.com Clone</h2>
-            <p>Udacity which is an online education provider that offers online courses, popularly known as MOOCs or Massive Open Online Courses. </p>
-              <h3>Tech Stack: </h3>
-            <p>HTML | CSS | JavaScript </p>
-             <p className="flt">
-            <b>Live Demo</b>
-            <b>Source code</b>
-            <b>Blog</b>
-            </p>
-            <br /><br /></div>
-     </div>
-    {/*   <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1 className="hh">Project 1</h1>
-            <h2>Udacity.com Clone</h2>
-            <p>Udacity which is an online education provider that offers online courses, popularly known as MOOCs or Massive Open Online Courses. </p>
-              <h3>Tech Stack: </h3>
-            <p>HTML | CSS | JavaScript </p>
-            <br /><br />
-            <div className="links">
-              <div className="link1"><a href="https://github.com/Pavankalyan477/Project-Buddies"><img src={source} alt="source" /></a></div>
-              <div className="link2"><a href="https://udacity-clone-git-master-udacity-clone.vercel.app/"><img src={live} alt="live" /></a></div>
-              <div className="link3"><a href="https://medium.com/@sarakantipavankalyan070/cloning-udacity-website-c2c93d684dbf"><img src={medium} alt="blog" /></a></div>
-            </div>
+  return <>
+
+    <div id="projects">
+      <center>
+        <h1 className="section-title">Projects info</h1>
+
+        <div className="one">
+
+          <img src={first} alt=""/>
+          <h2>Purplle Clone </h2>
+          <p>Purple.com is ecommerce website which sells cosmetic products online, This was my first team project done in Masai School course as a first construct week project in first unit. it was built by team of 4 members.</p>
+          <br />
+          <div>
+            <p><b>Tech Stacks:</b> HTML | CSS | JavaScript</p>
           </div>
-          {/* <div class="project-img">
-            <img src={udacity} alt="img"/>
-          </div> */}
-        {/* </div>
-        <br/>
-        <div class="project-item">
-          <div class="project-info">
-            <h1 className="hh">Project 2</h1>
+          <br />
+          <div>
+            <a href="https://github.com/shaista78/purpel_web_clone"><img className="img" src={source} alt="" /></a>
+          
+            <a href="https://purplleclone.herokuapp.com/html/home.html">  <img className="img1" src={live} alt="" /></a>
 
-            <h2>Udacity.com Clone</h2>
-            <p>Udacity which is an online education provider that offers online courses, popularly known as MOOCs or Massive Open Online Courses. </p>
-              <h3>Tech Stack: </h3>
-            <p>HTML | CSS | JavaScript | Express Js | Mongo DB </p>
-            <br /><br />
-            <div className="links">
-              <div className="link1"><a href="https://github.com/Pavankalyan477/Udacity_Project"><img src={source} alt="source" /></a></div>
-              <div className="link2"><a href="https://udacity-clone-git-master-udacity-clone.vercel.app/"><img src={live} alt="live" /></a></div>
-              <div className="link3"><a href="https://medium.com/@sarakantipavankalyan070/unit-3-construct-week-project-udacity-com-cloned-1b0ab43d7af5"><img src={medium} alt="blog" /></a></div>
+            <a href="https://medium.com/@shaistasulthana78/cloning-of-purplle-com-website-in-just-6-days-using-html-css-and-js-845ce38f71cc"><img className="img2" src={medium} alt="" /></a>
 
-            </div>
-          </div> */}
-
-          {/* <div class="project-img">
-            <img src={udacity} alt="img"/>
-          </div> */}
-        {/* </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1 className="hh">Project 3</h1>
-            <h2>Redbus.com Clone</h2>
-            <p>redBus is an Indian online bus ticketing platform, providing ticket booking facilities through its website, iOS, and Android mobile apps.</p>
-            <h3>Tech Stack: </h3>
-            <p>React Js | CSS | Styled-components | Express Js | Mongo DB </p>
-            <br /><br />
-            <div className="links">
-              <div className="link1"><a href="https://github.com/RaniKamna/Redbus_clone"><img src={source} alt="" /></a></div>
-              <div className="link2"> <a href="https://udacity-clone-git-master-udacity-clone.vercel.app/"> <img src={live} alt="live" /></a></div>
-              <div className="link3"><a href="https://medium.com/@sarakantipavankalyan070/building-the-clone-of-redbus-website-c1c7c428c26f"><img src={medium} alt="" /></a></div>
-            </div>
           </div>
-          {/* <div class="project-img">
-            <img src={redbus} alt="img"/>
-          </div> */}
-        {/* </div>
+        </div>
 
-      </div>*/} 
-    </div> 
-  </section>
+        <div className="one">
+          <img src={second} alt=""/>
+          <h2>Purplle Clone with Backend</h2>
+          <p>Purple.com website sells cosmetic products online, this project was built with backend. Second construct week project</p>
+          <div>
+            <br />
+            <p><b>Tech Stacks:</b> HTML | CSS | Nodejs | Express | mongoodb | Handlebars</p>
+            <br />
+          </div>
+          <div>
+            <a href="https://github.com/shaista78/Cloning_Website_Using_Backend"><img className="img" src={source} alt="" /></a>
+            <a href="">   <img className="img1" src={live} alt="" /></a>
+            <a href="https://medium.com/@shaistasulthana78/cloning-purplle-com-website-fda2c3f3914c"><img className="img2" src={medium} alt="" /></a>
+          </div>
+        </div>
+        <div className="one">
+
+          <img className="im" src={Fernway} alt=""/>
+          <h2>Fernway Solo-Traveller App</h2>
+          <p>Fernway is an app for solo travelers, including features for searching your travel destination with a wide range of accommodation information, and also making a tour plan.</p>
+          <div>
+            <br />
+            <p><b>Tech Stacks:</b> HTML | CSS | Reactjs | Json-server</p>
+            <br />
+          </div>
+
+          <div>
+            <a href="https://github.com/madanakrishnanmasai/fernway_travel"> <img className="img" src={source} alt="" /></a>
+            <a href="">      <img className="img1" src={live} alt="" /></a>
+            <a href="https://medium.com/@shaistasulthana78/fernway-solo-traveller-d57af8dea494"> <img className="img2" src={medium} alt="" /></a>
+          </div>
+
+        </div>
 
 
-     {/* Projects section */}
-    </>
+      </center>
+
+
+    </div>
+  </>
 }
-export {Projects}
+export { Projects }
