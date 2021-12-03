@@ -11,7 +11,7 @@ const Contact = () => {
   <section id="contact">
     <div className="contact container">
       <div>
-        <h1 className="section-title">Contact info</h1>
+        <h1 className="section-title"> <span>C</span>ontact <span>i</span>nfo</h1>
       </div>
       <br/>
       <br/>
@@ -55,15 +55,15 @@ const Contact = () => {
       <h2>You can also get in touch with me... </h2>
       <div class="social-icon">
         <div class="social-item">
-          <a href="https://github.com/shaista78"><img src={git} alt="git"/></a>
+          <a href="https://github.com/shaista78" target="blank"><img src={git} alt="git"/></a>
         </div>
         
         <div class="social-item">
-          <a href="https://www.linkedin.com/in/shaista-sulthana-121432175/"><img src={Linked} alt="linkedin" /></a>
+          <a href="https://www.linkedin.com/in/shaista-sulthana-121432175/" target="blank"><img src={Linked} alt="linkedin" /></a>
         </div>
         
         <div class="social-item">
-          <a href="https://medium.com/@shaistasulthana78"><img src={medium} alt="medium" /></a>
+          <a href="https://medium.com/@shaistasulthana78" target="blank"><img src={medium} alt="medium" /></a>
         </div>
       </div>
       <p>Build with ❤️ by Shaista Sulthana</p>

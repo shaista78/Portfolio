@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Nunito:ital,wght@1,200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap';
 
 * {
 	padding: 0;
@@ -42,16 +42,20 @@ p {
 
 .section-title {
 	font-size: 4rem;
-	font-weight: 300;
+	font-weight: 700;
 	color: black;
 	margin-bottom: 10px;
 	text-transform: uppercase;
+	
 	letter-spacing: 0.2rem;
 	text-align: center;
+	font-family: 'Nunito', sans-serif;
 }
+
 
 .section-title span {
 	color: crimson;
+	font-family: 'Nunito', sans-serif;
 }
 
 .cta {
@@ -354,26 +358,20 @@ p {
 /* End Hero Section */
 
 /* Services Section */
-#services {
-	background: radial-gradient(#1f778d, #eedade);
-}
-#services .section-title{
-	font-weight: 400;
-	font-family: 'Poppins', sans-serif;
+#services{
+background: radial-gradient(#1f778d, #eedade);
 }
 #services .services {
 	flex-direction: column;
 	text-align: center;
-	max-width: 70%;
+	max-width: 1500px;
 	margin: 0 auto;
 	padding: 100px 0;
 }
-
 #services .service-top {
 	max-width: 500px;
 	margin: 0 auto;
 }
-
 #services .service-bottom {
 	display: flex;
 	align-items: center;
@@ -381,25 +379,21 @@ p {
 	flex-wrap: wrap;
 	margin-top: 50px;
 }
-
 #services .service-item {
-
-	height: 30%;
-	width: 30%;
+	flex-basis: 80%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	background-color: #b3e4eb;
 	padding: 30px;
 	border-radius: 10px;
+
 	background-size: cover;
-	margin: auto;
+	margin: 10px 5%;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
 }
-
 #services .service-item::after {
 	content: '';
 	position: absolute;
@@ -407,30 +401,27 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #4fc0ec 0%, #485563 100%);
+ background-color:white;
 	opacity: 0.9;
 	z-index: -1;
 }
-
 #services .service-bottom .icon {
-	height: 30%;
-	width: 30%;
+	height: 80px;
+	width: 80px;
 	margin-bottom: 20px;
 }
-
 #services .service-item h2 {
 	font-size: 2rem;
-	color: white;
+	color:black;
 	margin-bottom: 10px;
 	text-transform: uppercase;
-	text-align: center;
 }
-
 #services .service-item p {
-	color: white;
+	color:black;
 	text-align: left;
 }
-
+/* 
+/* End 
 /* End Services Section */
 
 /* Projects section */
@@ -440,39 +431,110 @@ p {
 	font-family: 'Poppins', sans-serif;
 }
 
-.one {
-	display: inline-block;
-	width: 30%;
-	border-radius: 10px;
-	background-color: white;
-	margin: 2%;
-	font-size: 2rem;
-	overflow: auto;
-}
-#projects .section-title{
-	font-weight: 400;
+
+#projects .projects {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
 	font-family: 'Poppins', sans-serif;
 }
-.img {
-	width: 10%;
-	height: 10%;
+#projects .projects-header h1 {
+	margin-bottom: 50px;
+}
+#projects .all-projects {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#projects .project-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 50px;
+	
+}
+#projects .project-info {
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-color: white;
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 6%;
+	text-align: left;
+	
+}
+#projects .project-info h1 {
+	font-size: 4rem;
+	font-weight: 500;
+}
+#projects .project-info h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-top: 10px;
+}
+#projects .project-info p {
+	color: rgb(10, 9, 9);
+}
+#projects .project-img {
+	flex-basis: 50%;
+	height: 280px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 6%;
+	/* opacity: 5; */
+}
+#projects .project-img:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 90%;
+	width: 90%;
+	background-color: aliceblue;
+	opacity: 0;
+	
+}
+#projects .project-img img {
+	transition: 0.3s ease transform;
+}
+#projects .project-item:hover .project-img img {
+	transform: scale(1.1);
+}
+.links{
+	align-items: center;
+	height: px;
+	width: 100%;
+	display:grid;
+	grid-template-columns: 25% 25% 25%;
+	grid-gap: 1%;
+}
+.link1{
+	height: 70px;
+	width: 70px;
+	margin-bottom: 2%;
+}
+.link2{
+	height: 50px;
+	width: 70px;
+	margin-bottom: 2%;
+}
+.link3{
+	height: 50px;
+	width: 70px;
+	margin-bottom: 2%;
+	
 }
 
-.img1 {
-	width: 15%;
-	height: 20%;
-	margin-bottom: 1%;
-}
-
-.img2 {
-	width: 10%;
-	height: 10%;
-}
-
-.im {
-	width: 30%;
-	height: 20%;
-}
 
 
 
@@ -527,7 +589,7 @@ p {
 #about .col-right .cta {
 	color: black;
 	font-weight: 800;
-	margin-bottom: 50px;
+	margin-bottom: 150px;
 	padding: 10px 20px;
 	font-size: 2rem;
 }
@@ -550,11 +612,7 @@ p {
 	z-index: -1;
 }
 
-#about .section-title {
-	/* color: white; */
-	font-weight: bolder;
 
-}
 
 #about p {
 	color: white;
@@ -566,6 +624,51 @@ p {
 .about-img {
 	height: 90%;
 	width: 90%;
+}
+#about .about {
+	flex-direction: column-reverse;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px;
+}
+#about .col-left {
+	width: 250px;
+	height: 360px;
+}
+#about .col-right {
+	width: 100%;
+}
+#about .col-right h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	margin-bottom: 10px;
+}
+#about .col-right p {
+	margin-bottom: 20px;
+}
+#about .col-right .cta {
+	color: black;
+	margin-bottom: 50px;
+	padding: 10px 20px;
+	font-size: 2rem;
+}
+#about .col-left .about-img {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border: 10px solid white;
+}
+#about .col-left .about-img::after {
+	content: '';
+	position: absolute;
+	left: -33px;
+	top: 19px;
+	height: 98%;
+	width: 98%;
+	border: 7px solid crimson;
+	z-index: -1;
 }
 
 /* End About Section */
@@ -619,9 +722,7 @@ p {
 	font-weight: 500;
 	margin-bottom: 5px;
 }
-#contact .section-title{
-	font-weight: 400;
-}
+
 #contact .contact-info h2 {
 	font-size: 1.3rem;
 	line-height: 2rem;

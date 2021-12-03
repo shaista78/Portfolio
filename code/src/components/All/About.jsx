@@ -7,7 +7,7 @@ const About = () => {
       <div className="about container">
 
         <div className="col-right">
-          <h1 className="section-title">About me</h1>
+          <h1 className="section-title"><span>A</span>bout <span>m</span>e</h1>
           <h2>Full Stack Web Developer</h2>
           <p className="abt">Passionate web developer with the ability to write efficient code using
             MERN stack. Excited about building interactive and user-friendly
@@ -18,7 +18,7 @@ const About = () => {
             <br />And also,I would love to collaborate with other developers on interesting projects.</p>
           <br />
           <br />
-          <a href={resume} className="cta">Download Resume</a>
+          <a href={resume} className="cta" target="blank">Download Resume</a>
         </div>
       </div>
     </section>
